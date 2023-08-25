@@ -1,0 +1,92 @@
+@keyframes aura {
+  
+  0%{filter: drop-shadow(2px 2px 40px rgb(228, 227, 176)) 
+    drop-shadow(-2px 2px 40px rgb(236, 221, 7)) 
+    drop-shadow(2px -2px 40px rgb(229, 241, 160)) 
+    drop-shadow(-2px -2px 40px rgb(255, 251, 28));}
+    20%{filter: drop-shadow(2px 2px 5px rgb(228, 176, 176)) 
+      drop-shadow(-2px 2px 5px rgb(214, 174, 174)) 
+      drop-shadow(2px -2px 5px rgb(158, 113, 113)) 
+      drop-shadow(-2px -2px 5px rgb(187, 97, 97));}
+  40%{filter: drop-shadow(2px 2px 40px rgb(141, 214, 211)) 
+    drop-shadow(-2px 2px 40px rgb(174, 214, 209)) 
+    drop-shadow(2px -2px 40px rgb(7, 135, 173)) 
+    drop-shadow(-2px -2px 40px rgb(22, 52, 150));}
+  60%{filter: drop-shadow(2px 2px 30px rgb(148, 32, 184)) 
+    drop-shadow(-2px 2px 30px rgb(227, 158, 230)) 
+    drop-shadow(2px -2px 30px rgb(240, 47, 240)) 
+    drop-shadow(-2px -2px 30px rgb(123, 0, 139));}
+  80%{filter: drop-shadow(2px 2px 5px rgb(74, 248, 88)) 
+    drop-shadow(-2px 2px 5px rgb(152, 224, 152)) 
+    drop-shadow(2px -2px 5px rgb(6, 212, 92)) 
+    drop-shadow(-2px -2px 5px rgb(0, 182, 70));}
+  100%{filter: drop-shadow(2px 2px 40px rgb(228, 227, 176)) 
+    drop-shadow(-2px 2px 40px rgb(236, 221, 7)) 
+    drop-shadow(2px -2px 40px rgb(229, 241, 160)) 
+    drop-shadow(-2px -2px 40px rgb(255, 251, 28));}
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://wallpaperboat.com/wp-content/uploads/2019/05/om-001.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.meditatingSilouete {
+height: 90vh;
+opacity: 1;
+animation: aura 50s linear  infinite;
+filter: drop-shadow(2px 2px 40px rgb(228, 227, 176)) 
+    drop-shadow(-2px 2px 40px rgb(236, 221, 7)) 
+    drop-shadow(2px -2px 40px rgb(229, 241, 160)) 
+    drop-shadow(-2px -2px 40px rgb(255, 251, 28));
+}
+
+.imgFix {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: 0px;
+left: 1200px;
+z-index: -1;
+height: 100vh;
+width: 700px;
+}
+
+.chakraContainer {
+position: absolute;
+top: 0px;
+left: 0px;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(7, 1fr);
+height: 100vh;
+z-index: 3;
+}
+
+.alignedChakras {
+  position:absolute;
+  top: -100px;
+  left: 1470px;
+transform: scale(1, 0.8);
+z-index: 5;
+}
